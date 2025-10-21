@@ -1,0 +1,35 @@
+.cartWrapper {
+    width: 1200px;
+    max-height: 700px;
+    padding: 15px 10px 10px 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.cartTitle {
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid red;
+    margin-bottom: 30px ;
+    line-height: 44px;
+}
+
+.cartAndButtonsWrapper {
+    height: 580px;
+    display: grid;
+    grid-template-columns: 580px 580px;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    border: 1px solid greenyellow;
+    border-radius: 10px
+}
+
+.cart {
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.cartButtons {
+    border: 1px solid orchid;
+    border-radius: 10px;
+}

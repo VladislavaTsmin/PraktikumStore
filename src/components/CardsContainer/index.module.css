@@ -4,7 +4,7 @@
 
 .container{
     width: 1200px;
-    max-height: 600px;
+    max-height: 650px;
     padding: 0px 5px;
     overflow-y: auto;
     display: grid;

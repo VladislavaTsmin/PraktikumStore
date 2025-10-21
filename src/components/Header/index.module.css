@@ -29,6 +29,11 @@
     color: #fff;
 }
 
+.active {
+  background-color: red;
+  color: white;
+}
+
 .line {
   border: none;
   height: 2px;
