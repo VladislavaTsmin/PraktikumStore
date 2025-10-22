@@ -1,6 +1,6 @@
 import s from "./index.module.css";
 
-export default function CartProduct({ id, image, title, price, category, productCount, counterDecrease, counterIncrease, deleteFromCart }) {
+export default function CartProduct({ image, title, price, category, productCount, counterDecrease, counterIncrease, deleteFromCart }) {
 
 
 
