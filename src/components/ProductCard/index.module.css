@@ -9,6 +9,8 @@
     justify-content: space-between;
     gap: 10px;
     position: relative;
+
+    background-color: rgba(77, 111, 224, 0.308);
 }
 
 .card a {
@@ -16,10 +18,25 @@
     color: black;
 }
 
+.button {
+    width: 200px;
+}
+
+.button:hover{
+    background-color: rgb(55, 163, 55);
+}
+
+.button:active{
+    background-color: rgb(21, 85, 21);
+}
+
 .card img {
     width: 150px;
     height: 150px;
     object-fit: contain;
+
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 .card p {

@@ -14,23 +14,33 @@ export default function LastPurchase({ lastPurchase, visible }) {
     }, [lastPurchase]);
 
 
+
+
     return (
-        <div style={{ display: visible ? "block" : "none" }} className={s.wrapper}>
-            <div className={s.lastPurchaseWrapper}>
+        <div
+            style={{ display: visible ? "block" : "none" }}
+            className={s.wrapper}
+        >
+            <div
+                className={`${s.lastPurchaseWrapper} ${lastPurchase.length === 0 ? s.empty : ""
+                    }`}
+            >
                 {lastPurchase.length === 0
-                    ? "No previous purchases"
+                    ? <p className={s.emptyText}>No previous purchases</p>
                     : lastPurchase.map(product => (
                         <div key={product.id} className={s.divP}>
                             <p className={s.text}>{product.title}</p>
-                            <p></p>
+                            <p className={s.price}>${product.price * product.productCount}</p>
                             <p className={s.counter}>{product.productCount}</p>
                         </div>
                     ))}
             </div>
             <div className={s.total}>
-                <p>Your Last Total: ${lastTotal}</p>
+                <p>Your Last-Total: ${lastTotal}</p>
             </div>
         </div>
 
     );
 }
+
+

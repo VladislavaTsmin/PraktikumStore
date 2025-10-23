@@ -9,7 +9,7 @@ export default function ProductCard ({id, image, title, price, category, addToCa
             <p>${price}</p>
             <button onClick={() => {
                 addToCart({id, image, title, price, category})
-            }}>Buy</button>
+            }} className={s.button}>Buy</button>
         </div>
     )
 }

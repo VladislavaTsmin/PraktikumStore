@@ -1,8 +1,9 @@
 .header {
-  border: 1px solid red;
+  border: 5px solid rgb(24, 74, 114);
   border-radius: 10px;
   overflow: hidden;
   font-size: 14px;
+  min-height: 714px;
 }
 
 .categories_wrapper {
@@ -19,25 +20,27 @@
   border: none;    
   border-radius: 0px; 
   background-color: #fff;
-  color: red;
+  color: #000000;
   cursor: pointer;
   font-size: 14px;
 }
 
 .category_button:hover {
-    background-color: red;
+    background-color: rgb(36, 99, 187);
     color: #fff;
+    border: none;
 }
 
 .active {
-  background-color: red;
+  background-color: rgb(24, 74, 114);
   color: white;
+  border: nones;
 }
 
 .line {
   border: none;
   height: 2px;
-  background-color: red;
+  background-color: rgb(24, 74, 114);
   width: 100%;
   margin: 0;
   margin-bottom: 10px; 

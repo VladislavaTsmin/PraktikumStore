@@ -1,34 +1,83 @@
-.wrapper {
-
-}
-
 .lastPurchaseWrapper {
     overflow-y: scroll;
-    max-height: 480px;
+    max-height: 300px;
+    border: 5px solid rgb(24, 74, 114);
+    border-radius: 10px;
+    min-height: 50px;
+        background-color: rgba(69, 86, 143, 0.37);
 }
 
 .divP {
-    border: 1px solid red;
     display: grid;
-    grid-template-columns: 1100px 47px;
-    gap: 33px;
+    grid-template-columns: 1040px 47px 47px;
+    gap: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-
+    height: 47px;
 }
 
-.counter {
-    border: 1px solid red;
-    font-size: 14px;
-    padding: 5px;
+.divP:last-child {
+    margin-bottom: 0;
+}
+
+.text {
+    white-space: nowrap;
+    font-weight: bold;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text {
+
+.price,
+.counter {
+    border-radius: 10px;
+    font-size: 14px;
+
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.price {
+    min-width: 47px;
+
+}
+
+.total {
+    margin-top: 20px;
+    border: 5px solid rgb(24, 74, 114);
+    border-radius: 10px;
+
+    max-height: 50px;
     white-space: nowrap;
     font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+
+
+
+
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyText {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
 }
