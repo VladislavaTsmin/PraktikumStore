@@ -30,7 +30,7 @@ export default function LastPurchase({ lastPurchase, visible }) {
                     : lastPurchase.map(product => (
                         <div key={product.id} className={s.divP}>
                             <p className={s.text}>{product.title}</p>
-                            <p className={s.price}>${product.price * product.productCount}</p>
+                            <p className={s.price}>${(product.price * product.productCount).toFixed(2)}</p>
                             <p className={s.counter}>{product.productCount}</p>
                         </div>
                     ))}
